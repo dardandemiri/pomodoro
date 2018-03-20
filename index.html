@@ -16,93 +16,165 @@
 
 <body>
 
-  <div class="container-fluid heightTop">
-    <div class="row justify-content-center">
-      <div class="mt-5">
-        <h3 class="mt-2 display-4">Pomodoro</h3>
+  <section id="pomodoroSection">
 
-        <!-- Timer Starts-->
-        <div id="center">
-          <div class="text-center">
-            <div class="allText">
-              <h1 id="minutes" class="display-1">14</h1>
-              <p id="mode">SESSION</p>
+    <div class="container-fluid heightTop">
+      <div class="row justify-content-center">
+        <div class="mt-5 col-sm-10 col-md-8 col-lg-6 text-center">
+          <h3 class="mt-2 display-4">Pomodoro</h3>
+
+          <div>
+            <!-- Timer Starts-->
+            <div id="center">
+              <div class="text-center">
+                <div class="allText">
+                  <h1 id="minutes" class="display-1">0</h1>
+                  <p id="mode">SESSION</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div id="sat1">
-          <p id="seconds">32</p>
-        </div>
-
-
-        <!-- <div id="center" class="middlePoint mt-5"></div>
-          <div class="circle">
-            
+            <div id="sat1">
+              <p id="seconds">32</p>
+            </div>
+            <!-- Timer Ends -->
           </div>
 
-          
-        </div> -->
-        <!-- Timer  ends-->
 
+        </div>
+      </div>
+
+      <div class="row justify-content-center paddingSession">
+
+        <div class="col-sm-10 col-md-8 col-lg-6 text-center">
+
+          <p id="">BREAK</p>
+
+          <div>
+            <a name="" id="start" class="btn btn-light" href="#" role="button">Short</a>
+            <a name="" id="stop" class="btn btn-light" href="#" role="button">Long</a>
+          </div>
+        </div>
 
       </div>
     </div>
 
-    <div class="row justify-content-center paddingSession">
 
-      <div class="col-sm-10 col-md-8 col-lg-6 text-center">
+    <div class="container heightBottom">
+      <div class="row justify-content-center ">
+        <div class="col-sm-10 col-md-8 col-lg-6 paddingTop ">
+          <div class="p-3">
+            <div class="row text-center">
 
-        <p id="">BREAK</p>
+              <div class="col-3">
+                <img id="play" class="img-fluid " src="imgs/play.svg" alt="play">
+              </div>
 
-        <div>
-          <a name="" id="start" class="btn btn-light" href="#" role="button">Short</a>
-          <a name="" id="stop" class="btn btn-light" href="#" role="button">Long</a>
-        </div>
-      </div>
+              <div class="col-3">
+                <img id="pause" class="img-fluid " src="imgs/pause.svg" alt="play">
+              </div>
 
-    </div>
-  </div>
+              <div class="col-3">
+                <img id="reset" class="img-fluid " src="imgs/repeat.svg" alt="play">
+              </div>
 
-  </div>
+              <div class="col-3">
+                <img id="settings" class="img-fluid " src="imgs/settings.svg" alt="play">
+              </div>
 
-  <div class="container heightBottom">
-    <div class="row justify-content-center ">
-      <div class="col-sm-10 col-md-8 col-lg-6 paddingTop ">
-        <div class="p-3">
-          <div class="row text-center">
-
-            <div class="col-3">
-              <img class="img-fluid " src="imgs/play.svg" alt="play">
             </div>
-
-            <div class="col-3">
-              <img class="img-fluid " src="imgs/pause.svg" alt="play">
-            </div>
-
-            <div class="col-3">
-              <img class="img-fluid " src="imgs/repeat.svg" alt="play">
-            </div>
-
-            <div class="col-3">
-              <img class="img-fluid " src="imgs/settings.svg" alt="play">
-            </div>
-
           </div>
         </div>
       </div>
-    </div>
 
-  </div>
+    </div>
+  </section>
+
+  <section id="settingsSection" class="mt-5">
+    <div class="row justify-content-center pt-5">
+
+      <div class="col-sm-10 col-md-8 col-lg-6 mt-4 ">
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="">Long Session:</label>
+              <input type="number" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Default is: 45">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="">Long Break:</label>
+              <input type="number" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Default is: 15">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="">Short Session:</label>
+              <input type="number" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Default is: 15">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="">Short Break:</label>
+              <input type="number" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Default is: 5">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="sound" id="sound1" value="checkedValue" checked> Sound 1
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="sound" id="sound2" value="checkedValue"> Sound 2
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="sound" id="sound3" value="checkedValue"> Sound 3
+              </label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="sound" id="sound4" value="checkedValue"> Sound 4
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <button type="button" name="" id="save" class="btn btn-success  pl-5 pr-5 mr-4 ">Save</button>
+          <button type="button" name="" id="cancel" class="btn btn-danger  pl-5 pr-5 ">Cancel</button>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+    crossorigin="anonymous "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+    crossorigin="anonymous "></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+    crossorigin="anonymous "></script>
+  <script src="js/script.js "></script>
 </body>
 
 </html>
